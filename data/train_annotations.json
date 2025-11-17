@@ -1,0 +1,1406 @@
+[
+  {
+    "image_path": "data\\train images\\P0_00.jpg",
+    "image_id": "P0_00",
+    "bboxes": [
+      {
+        "bbox": [
+          0.6328125,
+          0.7861328125,
+          0.6591796875,
+          0.818359375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.1953125,
+          0.3564453125,
+          0.2255859375,
+          0.380859375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 2
+  },
+  {
+    "image_path": "data\\train images\\P0_01.jpg",
+    "image_id": "P0_01",
+    "bboxes": [
+      {
+        "bbox": [
+          0.296875,
+          0.5888671875,
+          0.326171875,
+          0.6259765625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.576171875,
+          0.509765625,
+          0.5966796875,
+          0.533203125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 2
+  },
+  {
+    "image_path": "data\\train images\\P0_02.jpg",
+    "image_id": "P0_02",
+    "bboxes": [
+      {
+        "bbox": [
+          0.7978515625,
+          0.2919921875,
+          0.806640625,
+          0.298828125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.30859375,
+          0.03125,
+          0.3359375,
+          0.0654296875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.3984375,
+          0.08984375,
+          0.419921875,
+          0.109375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.5576171875,
+          0.60546875,
+          0.564453125,
+          0.6083984375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 4
+  },
+  {
+    "image_path": "data\\train images\\P0_03.jpg",
+    "image_id": "P0_03",
+    "bboxes": [
+      {
+        "bbox": [
+          0.4892578125,
+          0.3779296875,
+          0.521484375,
+          0.423828125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.8701171875,
+          0.814453125,
+          0.896484375,
+          0.84765625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 2
+  },
+  {
+    "image_path": "data\\train images\\P0_04.jpg",
+    "image_id": "P0_04",
+    "bboxes": [
+      {
+        "bbox": [
+          0.4794921875,
+          0.345703125,
+          0.486328125,
+          0.3505859375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.4921875,
+          0.3828125,
+          0.5146484375,
+          0.4033203125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.5615234375,
+          0.7861328125,
+          0.591796875,
+          0.8173828125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 3
+  },
+  {
+    "image_path": "data\\train images\\P0_05.jpg",
+    "image_id": "P0_05",
+    "bboxes": [
+      {
+        "bbox": [
+          0.353515625,
+          0.5947265625,
+          0.375,
+          0.6337890625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.8271484375,
+          0.5205078125,
+          0.8544921875,
+          0.5458984375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.650390625,
+          0.4990234375,
+          0.66015625,
+          0.5087890625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.638671875,
+          0.4599609375,
+          0.662109375,
+          0.4833984375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 4
+  },
+  {
+    "image_path": "data\\train images\\P0_06.jpg",
+    "image_id": "P0_06",
+    "bboxes": [
+      {
+        "bbox": [
+          0.951171875,
+          0.5,
+          0.9677734375,
+          0.5458984375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.05078125,
+          0.4833984375,
+          0.091796875,
+          0.5185546875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.2734375,
+          0.361328125,
+          0.2900390625,
+          0.38671875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.599609375,
+          0.8447265625,
+          0.62890625,
+          0.880859375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.3603515625,
+          0.7607421875,
+          0.3720703125,
+          0.76953125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 5
+  },
+  {
+    "image_path": "data\\train images\\P0_07.jpg",
+    "image_id": "P0_07",
+    "bboxes": [
+      {
+        "bbox": [
+          0.765625,
+          0.0,
+          0.7724609375,
+          0.0224609375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.5888671875,
+          0.5791015625,
+          0.6494140625,
+          0.62109375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 2
+  },
+  {
+    "image_path": "data\\train images\\P0_08.jpg",
+    "image_id": "P0_08",
+    "bboxes": [
+      {
+        "bbox": [
+          0.41796875,
+          0.8125,
+          0.4462890625,
+          0.8408203125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.5693359375,
+          0.05078125,
+          0.6162109375,
+          0.0947265625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 2
+  },
+  {
+    "image_path": "data\\train images\\P0_09.jpg",
+    "image_id": "P0_09",
+    "bboxes": [
+      {
+        "bbox": [
+          0.25390625,
+          0.810546875,
+          0.3037109375,
+          0.8642578125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.5205078125,
+          0.4619140625,
+          0.546875,
+          0.5
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.455078125,
+          0.431640625,
+          0.466796875,
+          0.4580078125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 3
+  },
+  {
+    "image_path": "data\\train images\\P0_10.jpg",
+    "image_id": "P0_10",
+    "bboxes": [
+      {
+        "bbox": [
+          0.896484375,
+          0.037109375,
+          0.9462890625,
+          0.078125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.0859375,
+          0.82421875,
+          0.09375,
+          0.841796875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 2
+  },
+  {
+    "image_path": "data\\train images\\P0_11.jpg",
+    "image_id": "P0_11",
+    "bboxes": [
+      {
+        "bbox": [
+          0.7333984375,
+          0.2333984375,
+          0.7734375,
+          0.2744140625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.6328125,
+          0.3427734375,
+          0.6630859375,
+          0.3681640625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.314453125,
+          0.7529296875,
+          0.3291015625,
+          0.787109375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 3
+  },
+  {
+    "image_path": "data\\train images\\P0_12.jpg",
+    "image_id": "P0_12",
+    "bboxes": [
+      {
+        "bbox": [
+          0.2373046875,
+          0.4794921875,
+          0.255859375,
+          0.484375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.451171875,
+          0.6416015625,
+          0.478515625,
+          0.6875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.466796875,
+          0.70703125,
+          0.4873046875,
+          0.7509765625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.501953125,
+          0.1748046875,
+          0.53515625,
+          0.201171875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 4
+  },
+  {
+    "image_path": "data\\train images\\P0_13.jpg",
+    "image_id": "P0_13",
+    "bboxes": [
+      {
+        "bbox": [
+          0.59375,
+          0.5439453125,
+          0.6103515625,
+          0.5576171875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 1
+  },
+  {
+    "image_path": "data\\train images\\P0_14.jpg",
+    "image_id": "P0_14",
+    "bboxes": [],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 0
+  },
+  {
+    "image_path": "data\\train images\\P0_15.jpg",
+    "image_id": "P0_15",
+    "bboxes": [
+      {
+        "bbox": [
+          0.2978515625,
+          0.7548828125,
+          0.3154296875,
+          0.798828125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.12890625,
+          0.267578125,
+          0.1357421875,
+          0.271484375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.6123046875,
+          0.0771484375,
+          0.62890625,
+          0.1357421875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 3
+  },
+  {
+    "image_path": "data\\train images\\P0_16.jpg",
+    "image_id": "P0_16",
+    "bboxes": [
+      {
+        "bbox": [
+          0.87890625,
+          0.880859375,
+          0.890625,
+          0.8857421875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.970703125,
+          0.8564453125,
+          1.0,
+          0.880859375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.5576171875,
+          0.7294921875,
+          0.5888671875,
+          0.7841796875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.50390625,
+          0.6533203125,
+          0.5244140625,
+          0.6923828125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.103515625,
+          0.814453125,
+          0.1328125,
+          0.8427734375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 5
+  },
+  {
+    "image_path": "data\\train images\\P0_17.jpg",
+    "image_id": "P0_17",
+    "bboxes": [
+      {
+        "bbox": [
+          0.1826171875,
+          0.125,
+          0.2197265625,
+          0.171875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.2060546875,
+          0.3173828125,
+          0.26171875,
+          0.3466796875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.619140625,
+          0.2294921875,
+          0.6572265625,
+          0.2548828125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.953125,
+          0.82421875,
+          0.962890625,
+          0.8447265625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 4
+  },
+  {
+    "image_path": "data\\train images\\P0_18.jpg",
+    "image_id": "P0_18",
+    "bboxes": [
+      {
+        "bbox": [
+          0.6025390625,
+          0.326171875,
+          0.6162109375,
+          0.3564453125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.4814453125,
+          0.4248046875,
+          0.5244140625,
+          0.4658203125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.810546875,
+          0.419921875,
+          0.837890625,
+          0.4755859375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.15625,
+          0.0751953125,
+          0.19921875,
+          0.1240234375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 4
+  },
+  {
+    "image_path": "data\\train images\\P0_19.jpg",
+    "image_id": "P0_19",
+    "bboxes": [
+      {
+        "bbox": [
+          0.234375,
+          0.6083984375,
+          0.263671875,
+          0.642578125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.939453125,
+          0.482421875,
+          0.9814453125,
+          0.509765625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.4736328125,
+          0.3154296875,
+          0.4814453125,
+          0.318359375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.1044921875,
+          0.4072265625,
+          0.115234375,
+          0.4599609375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 4
+  },
+  {
+    "image_path": "data\\train images\\P0_20.jpg",
+    "image_id": "P0_20",
+    "bboxes": [
+      {
+        "bbox": [
+          0.4453125,
+          0.7822265625,
+          0.46875,
+          0.8154296875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.3759765625,
+          0.29296875,
+          0.40625,
+          0.3212890625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.1318359375,
+          0.166015625,
+          0.16015625,
+          0.1982421875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 3
+  },
+  {
+    "image_path": "data\\train images\\P0_21.jpg",
+    "image_id": "P0_21",
+    "bboxes": [
+      {
+        "bbox": [
+          0.1396484375,
+          0.1669921875,
+          0.1845703125,
+          0.193359375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.263671875,
+          0.6962890625,
+          0.2783203125,
+          0.7373046875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.474609375,
+          0.7587890625,
+          0.5146484375,
+          0.814453125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.8212890625,
+          0.6845703125,
+          0.8388671875,
+          0.6884765625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.154296875,
+          0.2568359375,
+          0.2255859375,
+          0.31640625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 5
+  },
+  {
+    "image_path": "data\\train images\\P0_22.jpg",
+    "image_id": "P0_22",
+    "bboxes": [
+      {
+        "bbox": [
+          0.7783203125,
+          0.9296875,
+          0.8173828125,
+          0.966796875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.4970703125,
+          0.09375,
+          0.5322265625,
+          0.130859375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.5029296875,
+          0.359375,
+          0.544921875,
+          0.400390625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 3
+  },
+  {
+    "image_path": "data\\train images\\P0_23.jpg",
+    "image_id": "P0_23",
+    "bboxes": [
+      {
+        "bbox": [
+          0.595703125,
+          0.08203125,
+          0.625,
+          0.1328125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.2275390625,
+          0.82421875,
+          0.2412109375,
+          0.83984375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.4423828125,
+          0.931640625,
+          0.4638671875,
+          0.9619140625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 3
+  },
+  {
+    "image_path": "data\\train images\\P0_24.jpg",
+    "image_id": "P0_24",
+    "bboxes": [
+      {
+        "bbox": [
+          0.5947265625,
+          0.8046875,
+          0.646484375,
+          0.86328125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.8056640625,
+          0.4404296875,
+          0.8427734375,
+          0.48046875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 2
+  },
+  {
+    "image_path": "data\\train images\\P0_25.jpg",
+    "image_id": "P0_25",
+    "bboxes": [
+      {
+        "bbox": [
+          0.6630859375,
+          0.3076171875,
+          0.677734375,
+          0.314453125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.751953125,
+          0.8134765625,
+          0.7841796875,
+          0.859375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.07421875,
+          0.916015625,
+          0.0810546875,
+          0.9326171875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.162109375,
+          0.7255859375,
+          0.1953125,
+          0.76953125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.25,
+          0.005859375,
+          0.251953125,
+          0.0068359375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 5
+  },
+  {
+    "image_path": "data\\train images\\P0_26.jpg",
+    "image_id": "P0_26",
+    "bboxes": [
+      {
+        "bbox": [
+          0.9111328125,
+          0.517578125,
+          0.9619140625,
+          0.5458984375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.9248046875,
+          0.35546875,
+          0.9697265625,
+          0.4033203125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.763671875,
+          0.64453125,
+          0.7880859375,
+          0.6796875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.7841796875,
+          0.7490234375,
+          0.8251953125,
+          0.794921875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 4
+  },
+  {
+    "image_path": "data\\train images\\P0_27.jpg",
+    "image_id": "P0_27",
+    "bboxes": [
+      {
+        "bbox": [
+          0.3203125,
+          0.6689453125,
+          0.3310546875,
+          0.6953125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.775390625,
+          0.65625,
+          0.8046875,
+          0.697265625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.775390625,
+          0.40234375,
+          0.77734375,
+          0.4033203125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.8388671875,
+          0.3583984375,
+          0.849609375,
+          0.375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.86328125,
+          0.3232421875,
+          0.8759765625,
+          0.3515625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 5
+  },
+  {
+    "image_path": "data\\train images\\P0_28.jpg",
+    "image_id": "P0_28",
+    "bboxes": [
+      {
+        "bbox": [
+          0.107421875,
+          0.8427734375,
+          0.1328125,
+          0.8642578125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.1005859375,
+          0.8955078125,
+          0.1220703125,
+          0.9111328125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 2
+  },
+  {
+    "image_path": "data\\train images\\P0_29.jpg",
+    "image_id": "P0_29",
+    "bboxes": [
+      {
+        "bbox": [
+          0.3623046875,
+          0.3193359375,
+          0.3798828125,
+          0.3251953125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.7470703125,
+          0.482421875,
+          0.7529296875,
+          0.4853515625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 2
+  },
+  {
+    "image_path": "data\\train images\\P0_30.jpg",
+    "image_id": "P0_30",
+    "bboxes": [
+      {
+        "bbox": [
+          0.755859375,
+          0.5361328125,
+          0.80859375,
+          0.5703125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.3583984375,
+          0.443359375,
+          0.40234375,
+          0.482421875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 2
+  },
+  {
+    "image_path": "data\\train images\\P0_31.jpg",
+    "image_id": "P0_31",
+    "bboxes": [
+      {
+        "bbox": [
+          0.935546875,
+          0.4560546875,
+          0.96875,
+          0.4931640625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.15625,
+          0.7275390625,
+          0.1708984375,
+          0.75
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 2
+  },
+  {
+    "image_path": "data\\train images\\P0_32.jpg",
+    "image_id": "P0_32",
+    "bboxes": [
+      {
+        "bbox": [
+          0.2734375,
+          0.0,
+          0.296875,
+          0.0341796875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.748046875,
+          0.1787109375,
+          0.7890625,
+          0.2109375
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.5205078125,
+          0.4560546875,
+          0.5517578125,
+          0.494140625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.9072265625,
+          0.2734375,
+          0.9287109375,
+          0.3017578125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.3818359375,
+          0.54296875,
+          0.41015625,
+          0.58203125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 5
+  },
+  {
+    "image_path": "data\\train images\\P0_33.jpg",
+    "image_id": "P0_33",
+    "bboxes": [
+      {
+        "bbox": [
+          0.888671875,
+          0.126953125,
+          0.923828125,
+          0.1748046875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.126953125,
+          0.14453125,
+          0.1484375,
+          0.1875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.2998046875,
+          0.1591796875,
+          0.31640625,
+          0.1982421875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.1357421875,
+          0.6865234375,
+          0.173828125,
+          0.7158203125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.3046875,
+          0.4951171875,
+          0.330078125,
+          0.541015625
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 5
+  },
+  {
+    "image_path": "data\\train images\\P0_34.jpg",
+    "image_id": "P0_34",
+    "bboxes": [
+      {
+        "bbox": [
+          0.447265625,
+          0.4453125,
+          0.453125,
+          0.4501953125
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      },
+      {
+        "bbox": [
+          0.8515625,
+          0.521484375,
+          0.888671875,
+          0.5498046875
+        ],
+        "class": 0,
+        "class_name": "mitotic_cell"
+      }
+    ],
+    "image_width": 1024,
+    "image_height": 1024,
+    "num_objects": 2
+  }
+]
