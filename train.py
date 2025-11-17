@@ -153,7 +153,7 @@ def train_model(
     # Callbacks
     callbacks = [
         keras.callbacks.ModelCheckpoint(
-            filepath=os.path.join(save_dir, 'best_model.h5'),
+            filepath=os.path.join(save_dir, 'best_model.keras'),
             monitor='val_loss',
             save_best_only=True,
             verbose=1
@@ -197,7 +197,7 @@ def train_model(
     )
 
     # Save final model
-    final_model_path = os.path.join(save_dir, 'final_model.h5')
+    final_model_path = os.path.join(save_dir, 'final_model.keras')
     model.save(final_model_path)
     print(f"\nFinal model saved to: {final_model_path}")
 
