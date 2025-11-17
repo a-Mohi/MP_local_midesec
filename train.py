@@ -20,40 +20,44 @@ def create_simple_dataset(annotations_path, batch_size=8, image_size=(512, 512),
     with open(annotations_path, 'r') as f:
         annotations = json.load(f)
 
-    def load_and_process(annotation):
+    # Extract image paths and prepare simple data
+    image_paths = []
+    has_objects = []
+    first_bboxes = []
+
+    for ann in annotations:
+        image_paths.append(ann['image_path'])
+        if len(ann['bboxes']) > 0:
+            has_objects.append(1)  # Has object
+            first_bboxes.append(ann['bboxes'][0]['bbox'])
+        else:
+            has_objects.append(0)  # No object
+            first_bboxes.append([0.0, 0.0, 0.0, 0.0])
+
+    def load_and_process(image_path, has_object, bbox):
         # Load image
-        image_path = annotation['image_path']
         image = tf.io.read_file(image_path)
         image = tf.image.decode_jpeg(image, channels=3)
         image = tf.cast(image, tf.float32) / 255.0
         image = tf.image.resize(image, image_size)
 
-        # Get bounding boxes
-        bboxes = annotation['bboxes']
-
-        # For this simple model, we'll just detect presence/absence
-        # and predict the first bbox
-        if len(bboxes) > 0:
-            # Has object (class 1 = mitotic cell, class 0 = background)
-            class_label = tf.constant([0.0, 1.0], dtype=tf.float32)  # One-hot: [background, mitotic]
-            # Use first bbox
-            bbox = tf.constant(bboxes[0]['bbox'], dtype=tf.float32)
+        # Class label (one-hot)
+        if has_object > 0:
+            class_label = tf.constant([0.0, 1.0], dtype=tf.float32)
         else:
-            # No object (background only)
-            class_label = tf.constant([1.0, 0.0], dtype=tf.float32)  # One-hot: [background, mitotic]
-            bbox = tf.constant([0.0, 0.0, 0.0, 0.0], dtype=tf.float32)
+            class_label = tf.constant([1.0, 0.0], dtype=tf.float32)
 
         # Simple augmentation
         if augment:
             if tf.random.uniform([]) > 0.5:
                 image = tf.image.flip_left_right(image)
-                if class_label[1] > 0:  # Has object
+                if has_object > 0:
                     xmin, ymin, xmax, ymax = tf.unstack(bbox)
                     bbox = tf.stack([1.0 - xmax, ymin, 1.0 - xmin, ymax])
 
             if tf.random.uniform([]) > 0.5:
                 image = tf.image.flip_up_down(image)
-                if class_label[1] > 0:  # Has object
+                if has_object > 0:
                     xmin, ymin, xmax, ymax = tf.unstack(bbox)
                     bbox = tf.stack([xmin, 1.0 - ymax, xmax, 1.0 - ymin])
 
@@ -62,27 +66,18 @@ def create_simple_dataset(annotations_path, batch_size=8, image_size=(512, 512),
             image = tf.image.random_contrast(image, lower=0.8, upper=1.2)
             image = tf.clip_by_value(image, 0.0, 1.0)
 
-        return image, {'class': class_label, 'bbox': bbox}
+        return image, class_label, bbox
 
-    # Create dataset
-    dataset = tf.data.Dataset.from_tensor_slices(annotations)
+    # Create dataset from lists
+    dataset = tf.data.Dataset.from_tensor_slices((image_paths, has_objects, first_bboxes))
+
     dataset = dataset.map(
-        lambda x: tf.py_function(
-            func=load_and_process,
-            inp=[x],
-            Tout=(tf.float32, {'class': tf.float32, 'bbox': tf.float32})
-        ),
+        lambda path, has_obj, bbox: load_and_process(path, has_obj, bbox),
         num_parallel_calls=tf.data.AUTOTUNE
     )
 
-    # Set shapes
-    dataset = dataset.map(lambda img, label: (
-        tf.ensure_shape(img, [*image_size, 3]),
-        {
-            'class': tf.ensure_shape(label['class'], [2]),
-            'bbox': tf.ensure_shape(label['bbox'], [4])
-        }
-    ))
+    # Restructure to match model output format
+    dataset = dataset.map(lambda img, cls, bbox: (img, {'class': cls, 'bbox': bbox}))
 
     if augment:
         dataset = dataset.shuffle(len(annotations))
