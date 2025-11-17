@@ -61,12 +61,23 @@ def create_simple_detector(input_shape=(512, 512, 3), num_classes=1):
     inputs = keras.Input(shape=input_shape)
 
     # Feature extractor - using EfficientNetB0 for better accuracy
-    backbone = keras.applications.EfficientNetB0(
-        input_shape=input_shape,
-        include_top=False,
-        weights='imagenet',
-        pooling=None
-    )
+    try:
+        backbone = keras.applications.EfficientNetB0(
+            input_shape=input_shape,
+            include_top=False,
+            weights='imagenet',
+            pooling=None
+        )
+        print("Loaded EfficientNetB0 with ImageNet weights")
+    except Exception as e:
+        print(f"Warning: Could not load ImageNet weights ({e})")
+        print("Initializing EfficientNetB0 with random weights")
+        backbone = keras.applications.EfficientNetB0(
+            input_shape=input_shape,
+            include_top=False,
+            weights=None,
+            pooling=None
+        )
 
     # Make backbone trainable
     backbone.trainable = True
