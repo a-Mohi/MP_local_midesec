@@ -12,6 +12,47 @@ from datetime import datetime
 from model import build_detection_model, compile_model
 
 
+def setup_gpu_strategy():
+    """
+    Setup multi-GPU training strategy.
+    Returns strategy and number of GPUs.
+    """
+    # List available GPUs
+    gpus = tf.config.list_physical_devices('GPU')
+
+    if gpus:
+        try:
+            # Enable memory growth for all GPUs to avoid OOM errors
+            for gpu in gpus:
+                tf.config.experimental.set_memory_growth(gpu, True)
+
+            print(f"\n{'='*80}")
+            print(f"GPU SETUP")
+            print(f"{'='*80}")
+            print(f"Found {len(gpus)} GPU(s):")
+            for i, gpu in enumerate(gpus):
+                print(f"  GPU {i}: {gpu.name}")
+
+            # Create MirroredStrategy for multi-GPU training
+            if len(gpus) > 1:
+                strategy = tf.distribute.MirroredStrategy()
+                print(f"\nUsing MirroredStrategy with {strategy.num_replicas_in_sync} GPUs")
+            else:
+                strategy = tf.distribute.get_strategy()  # Default strategy
+                print(f"\nUsing single GPU training")
+
+            print(f"{'='*80}\n")
+
+        except RuntimeError as e:
+            print(f"GPU setup error: {e}")
+            strategy = tf.distribute.get_strategy()
+    else:
+        print("No GPUs found. Using CPU.")
+        strategy = tf.distribute.get_strategy()
+
+    return strategy
+
+
 def create_simple_dataset(annotations_path, batch_size=8, image_size=(512, 512), augment=True):
     """
     Create a simpler dataset that works with the detection model.
@@ -109,42 +150,50 @@ def train_model(
     print("MITOTIC CELL DETECTION - TRAINING")
     print("=" * 80)
 
+    # Setup multi-GPU strategy
+    strategy = setup_gpu_strategy()
+
     # Create model directory
     os.makedirs(model_dir, exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     save_dir = os.path.join(model_dir, f'run_{timestamp}')
     os.makedirs(save_dir, exist_ok=True)
 
+    # Adjust batch size for multi-GPU training
+    global_batch_size = batch_size * strategy.num_replicas_in_sync
+    print(f"Global batch size: {global_batch_size} (batch_size={batch_size} × {strategy.num_replicas_in_sync} GPUs)")
+
     # Create datasets
     print("\nCreating datasets...")
     train_ds, train_steps = create_simple_dataset(
         'data/train_annotations.json',
-        batch_size=batch_size,
+        batch_size=global_batch_size,
         image_size=image_size,
         augment=True
     )
 
     val_ds, val_steps = create_simple_dataset(
         'data/test_annotations.json',
-        batch_size=batch_size,
+        batch_size=global_batch_size,
         image_size=image_size,
         augment=False
     )
 
-    print(f"Training samples: {train_steps * batch_size}")
-    print(f"Validation samples: {val_steps * batch_size}")
+    print(f"Training samples: {train_steps * global_batch_size}")
+    print(f"Validation samples: {val_steps * global_batch_size}")
 
-    # Create model
+    # Create and compile model within strategy scope
     print("\nBuilding model...")
-    model = build_detection_model(
-        input_shape=(*image_size, 3),
-        num_classes=1,
-        model_type='efficientnet'
-    )
+    with strategy.scope():
+        model = build_detection_model(
+            input_shape=(*image_size, 3),
+            num_classes=1,
+            model_type='efficientnet'
+        )
 
-    # Compile model
-    print("Compiling model...")
-    model = compile_model(model, learning_rate=learning_rate)
+        # Compile model
+        print("Compiling model...")
+        model = compile_model(model, learning_rate=learning_rate)
 
     # Print model summary
     print("\nModel summary:")
@@ -223,10 +272,14 @@ def train_model(
 
 
 if __name__ == '__main__':
+    # Optional: Set which GPUs to use (comment out to use all available GPUs)
+    # os.environ['CUDA_VISIBLE_DEVICES'] = '0,1,2'  # Use GPUs 0, 1, and 2
+    # os.environ['CUDA_VISIBLE_DEVICES'] = '0'      # Use only GPU 0
+
     # Configuration
     CONFIG = {
         'epochs': 100,
-        'batch_size': 8,
+        'batch_size': 8,  # Per-GPU batch size (will be multiplied by number of GPUs)
         'image_size': (512, 512),
         'learning_rate': 1e-4,
         'model_dir': 'models'
