@@ -102,12 +102,12 @@ def create_simple_detector(input_shape=(512, 512, 3), num_classes=1):
     # Classification head
     class_output = layers.Dense(128, activation='relu')(gap)
     class_output = layers.Dropout(0.3)(class_output)
-    class_output = layers.Dense(num_classes + 1, activation='softmax', name='class_output')(class_output)
+    class_output = layers.Dense(num_classes + 1, activation='softmax', name='class')(class_output)
 
     # Bounding box regression head
     bbox_output = layers.Dense(128, activation='relu')(gap)
     bbox_output = layers.Dropout(0.3)(bbox_output)
-    bbox_output = layers.Dense(4, activation='sigmoid', name='bbox_output')(bbox_output)  # [xmin, ymin, xmax, ymax]
+    bbox_output = layers.Dense(4, activation='sigmoid', name='bbox')(bbox_output)  # [xmin, ymin, xmax, ymax]
 
     model = keras.Model(inputs=inputs, outputs={'class': class_output, 'bbox': bbox_output})
 
